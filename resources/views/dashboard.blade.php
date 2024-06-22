@@ -17,13 +17,14 @@
     <div class="relative h-screen">
         <!-- Contenedor del video -->
         <div class="relative w-full h-full">
-            <video muted autoplay width="100%" height="100%" class="object-cover" controls>
-                <source src="{{ asset('videos/video1.mp4') }}" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
-            </video>
+            <div class="relative w-screen h-screen">
+                <img src="https://media.gq.com.mx/photos/60cf8f0a33c54bdef67610ee/16:9/w_2560%2Cc_limit/paisaje.jpg" alt="Visita Guiada" class="absolute top-0 left-0 w-full h-full object-cover opacity-75">
+                <div class="absolute top-0 left-0 w-full h-full bg-black opacity-25"></div>
+            </div>
+
             <!-- Contenido superpuesto -->
             <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 z-5 ">No importa a dónde vayas, te llevaremos allí.</h1>
+                <h1 class="text-4xl md:text-6xl font-bold text-left mb-10 z-5 px-32 md:px-64">No importa a dónde vayas, te llevaremos allí.</h1>
                 <form action="" method="POST">
                     <div class="bg-white bg-opacity-40 rounded-lg p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 z-10">
                         <input type="text" placeholder="¿A dónde?" class="p-2 rounded w-full md:w-auto text-black" style="color: black;">
@@ -45,7 +46,7 @@
         </div>
     </div>
     </section>
-
+    
     <!-- Sección de Servicios -->
     <section id="servicios" class="mt-12">
     <div class="container mx-auto py-12">
@@ -89,13 +90,106 @@
     </section>
 
     <!-- Sección frase llamativa -->
-    <section class="mt-12">
+    <section  class="mt-12">
         <div class="relative bg-gray-100 py-12">
             <div class="container mx-auto px-4">
-                <img src="https://timelinecovers.pro/facebook-cover/download/Paisajes-facebook-cover.jpg" class="cover-image" alt="Fondo de portada">
+                <img src="https://w7.pngwing.com/pngs/468/526/png-transparent-city-lights-neon-background-city-lights-poster-banner-photography.png" class="cover-image" alt="Fondo de portada">
                 <div class="absolute inset-0 flex items-center justify-center">
                     <h2 class="text-3xl font-bold text-center mb-8 text-white sans-serif'">Hagamos tus próximas vacaciones increíbles</h2>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección creación de paquetes -->
+    <section x-data="{ showModal: false }">
+        <div class="container mx-auto p-6">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="text-center mb-6">
+                    <h1 class="text-3xl font-bold text-blue-900">Le ofrecemos los mejores recorridos turísticos por el Mundo</h1>
+                    <p class="mt-4 text-gray-600">Nuestros servicios de turismo le brindan la oportunidad de explorar los destinos más fascinantes y emocionantes alrededor del mundo. Con una amplia gama de recorridos cuidadosamente diseñados, garantizamos experiencias inolvidables que le permitirán descubrir la riqueza cultural, histórica y natural de cada destino.</p>
+                    <button @click="showModal = true" class="mt-4 px-6 py-2 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700">Crea tu propio paquete</button>
+                </div>
+                <div class="flex flex-wrap -mx-3">
+                    <div class="w-full md:w-2/3 px-3">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="relative">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/London_Big_Ben_Phone_box.jpg/800px-London_Big_Ben_Phone_box.jpg" alt="London" class="w-full h-48 object-cover rounded-lg">
+                                <div class="absolute top-0 left-0 bg-red-600 text-white px-3 py-1 rounded-br-lg">$700</div>
+                            </div>
+                            <div class="relative">
+                                <img src="https://i1.wp.com/goliveitblog.com/wp-content/uploads/2020/03/Istanbul-Bosphorus-Sunrise-miabid.jpg?fit=1024%2C1024&ssl=1" alt="Istanbul" class="w-full h-48 object-cover rounded-lg">
+                                <div class="absolute top-0 left-0 bg-red-600 text-white px-3 py-1 rounded-br-lg">$800</div>
+                            </div>
+                            <div class="relative">
+                                <img src="https://www.italia.it/content/dam/tdh/es/interests/lazio/roma/roma-in-48-ore/media/20220127150143-colosseo-roma-lazio-shutterstock-756032350.jpg" alt="Rome" class="w-full h-48 object-cover rounded-lg">
+                                <div class="absolute top-0 left-0 bg-red-600 text-white px-3 py-1 rounded-br-lg">$500</div>
+                            </div>
+                            <div class="relative">
+                                <img src="https://s7g10.scene7.com/is/image/stena/20150820_berlin-brandenburg-gate:16-9?ts=1688733511559&dpr=off" alt="Berlin" class="w-full h-48 object-cover rounded-lg">
+                                <div class="absolute top-0 left-0 bg-red-600 text-white px-3 py-1 rounded-br-lg">$400</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 px-3 mt-6 md:mt-0">
+                        <div class="relative h-full">
+                            <img src="https://res.cloudinary.com/dtljonz0f/image/upload/c_fill,w_3840,g_auto/f_auto/q_auto:eco/Paris-hp-banner_kzqphg?_a=BAVAEyBy0" alt="Paris" class="w-full h-full object-cover rounded-lg">
+                            <div class="absolute top-0 left-0 bg-red-600 text-white px-3 py-1 rounded-br-lg">$600</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div x-show="showModal" class="fixed inset-0 flex items-center justify-center z-50">
+            <div class="fixed inset-0 bg-black opacity-50" @click="showModal = false"></div>
+            <div class="bg-white rounded-lg shadow-lg p-6 max-w-lg mx-auto z-50">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold">Construya su propio paquete</h2>
+                    <button @click="showModal = false" class="text-gray-500 hover:text-gray-700">&times;</button>
+                </div>
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Introduzca lugar de partida (país, región o ciudad)</label>
+                        <input type="text" placeholder="Suiza" class="w-full px-3 py-2 border rounded-lg">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Destino de Viaje</label>
+                        <input type="text" placeholder="Brazil" class="w-full px-3 py-2 border rounded-lg">
+                    </div>
+                    <div class="mb-4 grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700">Rango de fechas</label>
+                            <input type="date" placeholder="Fecha de inicio" class="w-full px-3 py-2 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 invisible">Fecha final</label>
+                            <input type="date" placeholder="Fecha final" class="w-full px-3 py-2 border rounded-lg">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Invitados</label>
+                        <select class="w-full px-3 py-2 border rounded-lg">
+                            <option>2 adultos</option>
+                            <option>1 adulto</option>
+                            <option>3 adultos</option>
+                            <option>2 adultos y 1 niño</option>
+                            <!-- Más opciones -->
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Reserve una Habitación:</label>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="alojamiento" class="mr-2">
+                            <label for="alojamiento" class="text-gray-700">Alojamiento</label>
+                            <button type="button" class="ml-4 px-4 py-2 bg-red-600 text-white rounded-full hover:bg-red-700">Escoger habitación</button>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <button type="button" class="mt-4 px-6 py-2 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700">Comprar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -181,35 +275,5 @@
         <button class="bg-red-600 hover:bg-red-700 text-white p-2 rounded w-full md:w-auto">Explorar más tours</button>
         </div>
     </div>
-    </section>
-    
-    <!-- Sección de testimonios -->
-    <section class="py-12">
-        <div class="container mx-auto py-24 px-4 text-center">
-            <h2 class="text-red-500 uppercase tracking-wide font-semibold mb-2">Promoción</h2>
-            <h3 class="text-3xl font-bold text-gray-800 mb-8">Vea lo que nuestros clientes dicen sobre nosotros</h3>
-            <div class="relative bg-white py-24 px-8 rounded-lg shadow-lg max-w-3xl mx-auto min-h-80">
-                <div class="absolute left-0 top-1/2 transform -translate-y-1/2">
-                    <button class="bg-gray-200 text-gray-600 hover:bg-gray-300 p-2 rounded-full focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="absolute right-0 top-1/2 transform -translate-y-1/2">
-                    <button class="bg-gray-200 text-gray-600 hover:bg-gray-300 p-2 rounded-full focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="mb-4 py-12">
-                    <img src="https://cdn-icons-png.freepik.com/256/14083/14083134.png?semt=ais_hybrid" alt="Cliente" class="w-16 h-16 mx-auto rounded-full border-4 border-white shadow-lg">
-                </div>
-                <blockquote class="text-gray-600 italic mb-4">"Lo que realmente me gusta de esta página es la amplia variedad de destinos y opciones de alojamiento que ofrece. Siempre encuentro excelentes ofertas y promociones que se adaptan a mi presupuesto y preferencias."</blockquote>
-                <p class="font-semibold text-gray-800 py-8">Christine Beckers - Diseñadora</p>
-                
-            </div>
-        </div>
     </section>
 </x-app-layout>
