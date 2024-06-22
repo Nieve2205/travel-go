@@ -20,17 +20,7 @@
                     <a href="{{ url('/#servicios') }}" class="text-gray-300 hover:text-white">Servicios</a>
                 </li>
                 <li>
-                    <div class="relative group">
-                    <button class="text-gray-300 hover:text-white">Paquetes</button>
-                        <div class="absolute hidden group-hover:block bg-white text-black rounded shadow-lg z-50">
-                            <ul>
-                                <li><a href="#" class="block px-8 py-2 hover:bg-gray-200 w-50 h-16">Paquete Luna de Miel</a></li>
-                                <li><a href="#" class="block px-8 py-2 hover:bg-gray-200 w-50 h-16 py-4">Paquete Familiares</a></li>
-                                <li><a href="#" class="block px-8 py-2 hover:bg-gray-200 w-50 h-16">Eventos musicales</a></li>
-                                <li><a href="{{ url('/paquetes') }}" class="block px-8 py-2 hover:bg-gray-200 w-50 h-16">Paquetes</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <a href="{{ url('/paquetes') }}" class="text-gray-300 hover:text-white">Paquetes</a>
                 </li>
             </ul> 
             </div>
