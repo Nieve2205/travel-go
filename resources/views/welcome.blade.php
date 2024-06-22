@@ -15,7 +15,7 @@
     @endpush
     <section id="principal">
     <div class="relative h-screen">
-        <!-- Contenedor del video -->
+        <!-- Contenedor del imagen -->
         <div class="relative w-full h-full">
             <div class="relative w-screen h-screen">
                 <img src="https://media.gq.com.mx/photos/60cf8f0a33c54bdef67610ee/16:9/w_2560%2Cc_limit/paisaje.jpg" alt="Visita Guiada" class="absolute top-0 left-0 w-full h-full object-cover opacity-75">

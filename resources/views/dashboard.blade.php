@@ -175,7 +175,6 @@
                             <option>1 adulto</option>
                             <option>3 adultos</option>
                             <option>2 adultos y 1 niño</option>
-                            <!-- Más opciones -->
                         </select>
                     </div>
                     <div class="mb-4">
