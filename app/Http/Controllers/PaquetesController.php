@@ -19,15 +19,4 @@ class PaquetesController extends Controller
     {
         return view('Paquetes.reserva', ['activeTab' => $tab]);
     }
-    public function galeria()
-{
-    $images = [
-        ['src' => 'ruta-a-la-imagen1', 'alt' => 'Descripción de la imagen 1'],
-        ['src' => 'ruta-a-la-imagen2', 'alt' => 'Descripción de la imagen 2'],
-        ['src' => 'ruta-a-la-imagen3', 'alt' => 'Descripción de la imagen 3'],
-        // Agrega más imágenes según necesites
-    ];
-
-    return view('reserva.index', compact('images'));
-}
 }
