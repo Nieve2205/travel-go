@@ -26,15 +26,14 @@
             <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
                 <h1 class="text-4xl md:text-6xl font-bold text-left mb-10 z-5 px-32 md:px-64">No importa a dónde vayas, te llevaremos allí.</h1>
                 <form action="" method="POST">
-                    <div class="bg-white bg-opacity-40 rounded-lg p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 z-10">
+                    <div class="bg-white bg-opacity-40 rounded-lg p-6 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-4 z-10">
                         <input type="text" placeholder="¿A dónde?" class="p-2 rounded w-full md:w-auto text-black" style="color: black;">
-                        <select class="p-2 rounded w-full md:w-auto text-black" style="color: black;">
+                        <select class="p-2 px-12 rounded w-full md:w-auto text-black" style="color: black;">
                             <option>Tipo de viaje</option>
                             <option>Vacaciones</option>
                             <option>Negocios</option>
                             <option>Aventura</option>
                         </select>
-                        <input type="text" placeholder="Duración" class="p-2 rounded w-full md:w-auto text-black" style="color: black;">
                         <button class="bg-red-600 hover:bg-red-700 text-white p-2 rounded w-full md:w-auto">Buscar</button>
                     </div>
                 </form>
@@ -272,7 +271,7 @@
             </div>
         </div>
         <div class="mt-8 text-center mb-8">
-        <button class="bg-red-600 hover:bg-red-700 text-white p-2 rounded w-full md:w-auto">Explorar más tours</button>
+        <a href="/paquetes" class="bg-red-600 hover:bg-red-700 text-white p-2 rounded w-full md:w-auto block md:inline-block text-center md:text-left">Explorar más tours</a>
         </div>
     </div>
     </section>

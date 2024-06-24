@@ -15,7 +15,7 @@
                 </div>
                 <div class="flex space-x-8">
                     <div>
-                        <h3 class="text-xl font-semibold text-gray-900">Compañía</h3>
+                        <h3 class="font-bold text-left text-red-600">Compañía</h3>
                         <ul class="mt-2 text-gray-600">
                             <li><a href="#" class="hover:underline">A cerca</a></li>
                             <li class="mt-1"><a href="#" class="hover:underline">Carreras</a></li>
@@ -24,7 +24,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold text-gray-900">Destinos</h3>
+                        <h3 class="font-bold text-left text-red-600">Destinos</h3>
                         <ul class="mt-2 text-gray-600">
                             <li><a href="#" class="hover:underline">Maldivas</a></li>
                             <li class="mt-1"><a href="#" class="hover:underline">Los Angeles</a></li>
@@ -33,11 +33,10 @@
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold text-gray-900">Suscríbase a nuestro boletín</h3>
+                        <h3 class="font-bold text-left text-red-600">Ayuda</h3>
                         <div class="mt-2">
-                            <input type="email" placeholder="Tu dirección de correo" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            <button class="bg-red-600 hover:bg-red-700 text-white p-2 rounded w-full md:w-auto mt-4">Suscribete</button>
-                            <p class="mt-1 text-gray-600 text-sm">* Le enviaremos actualizaciones semanales para su mejor paquete turístico.</p>
+                            <p class="mt-1 text-gray-600 text-sm">Si tienes dudas comunicate a este correo:</p>
+                            <h5 class="font-bold text-center text-red-600 ">travelgo@gmail.com</h5>
                         </div>
                     </div>
                 </div>
