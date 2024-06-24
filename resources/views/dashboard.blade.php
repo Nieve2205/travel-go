@@ -271,7 +271,7 @@
             </div>
         </div>
         <div class="mt-8 text-center mb-8">
-        <button class="bg-red-600 hover:bg-red-700 text-white p-2 rounded w-full md:w-auto">Explorar más tours</button>
+        <a href="/paquetes" class="bg-red-600 hover:bg-red-700 text-white p-2 rounded w-full md:w-auto block md:inline-block text-center md:text-left">Explorar más tours</a>
         </div>
     </div>
     </section>

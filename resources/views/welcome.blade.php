@@ -26,15 +26,14 @@
             <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
                 <h1 class="text-4xl md:text-6xl font-bold text-left mb-10 z-5 px-32 md:px-64">No importa a dónde vayas, te llevaremos allí.</h1>
                 <form action="" method="POST">
-                    <div class="bg-white bg-opacity-40 rounded-lg p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 z-10">
+                    <div class="bg-white bg-opacity-40 rounded-lg p-6 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-4 z-10">
                         <input type="text" placeholder="¿A dónde?" class="p-2 rounded w-full md:w-auto text-black" style="color: black;">
-                        <select class="p-2 rounded w-full md:w-auto text-black" style="color: black;">
+                        <select class="p-2 px-12 rounded w-full md:w-auto text-black" style="color: black;">
                             <option>Tipo de viaje</option>
                             <option>Vacaciones</option>
                             <option>Negocios</option>
                             <option>Aventura</option>
                         </select>
-                        <input type="text" placeholder="Duración" class="p-2 rounded w-full md:w-auto text-black" style="color: black;">
                         <button class="bg-red-600 hover:bg-red-700 text-white p-2 rounded w-full md:w-auto">Buscar</button>
                     </div>
                 </form>
@@ -272,38 +271,8 @@
             </div>
         </div>
         <div class="mt-8 text-center mb-8">
-        <button class="bg-red-600 hover:bg-red-700 text-white p-2 rounded w-full md:w-auto">Explorar más tours</button>
+        <a href="/paquetes" class="bg-red-600 hover:bg-red-700 text-white p-2 rounded w-full md:w-auto block md:inline-block text-center md:text-left">Explorar más tours</a>
         </div>
     </div>
-    </section>
-    
-    <!-- Sección de testimonios -->
-    <section class="py-12">
-        <div class="container mx-auto py-20 px-4 text-center">
-            <h2 class="text-red-500 uppercase tracking-wide font-semibold mb-2">Promoción</h2>
-            <h3 class="text-3xl font-bold text-gray-800 mb-8">Vea lo que nuestros clientes dicen sobre nosotros</h3>
-            <div class="relative bg-white py-24 px-8 rounded-lg shadow-lg max-w-3xl mx-auto min-h-80">
-                <div class="absolute left-0 top-1/2 transform -translate-y-1/2">
-                    <button class="bg-gray-200 text-gray-600 hover:bg-gray-300 p-2 rounded-full focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="absolute right-0 top-1/2 transform -translate-y-1/2">
-                    <button class="bg-gray-200 text-gray-600 hover:bg-gray-300 p-2 rounded-full focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="mb-4 py-8">
-                    <img src="https://cdn-icons-png.freepik.com/256/14083/14083134.png?semt=ais_hybrid" alt="Cliente" class="w-16 h-16 mx-auto rounded-full border-4 border-white shadow-lg">
-                </div>
-                <blockquote class="text-gray-600 italic mb-4 px-8">"Lo que realmente me gusta de esta página es la amplia variedad de destinos y opciones de alojamiento que ofrece. Siempre encuentro excelentes ofertas y promociones que se adaptan a mi presupuesto y preferencias."</blockquote>
-                <p class="font-semibold text-gray-800 py-8">Christine Beckers - Diseñadora</p>
-                
-            </div>
-        </div>
     </section>
 </x-app-layout>
