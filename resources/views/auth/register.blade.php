@@ -1,6 +1,10 @@
 <x-guest-layout>
     <div class="flex justify-end h-screen">
+<<<<<<< HEAD
         <div class="w-[700px] h-full bg-white shadow-md overflow-hidden sm:rounded-lg">
+=======
+        <div class="w-[900px] bg-white shadow-md overflow-hidden sm:rounded-lg">
+>>>>>>> maciel
             <div class="flex items-center justify-center h-full">    
                 <form method="POST" action="{{ route('register') }}" class="w-3/5">
                     @csrf
@@ -48,3 +52,4 @@
                 </form>
             </div>
 </x-guest-layout>
+

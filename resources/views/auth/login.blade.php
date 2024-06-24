@@ -71,4 +71,8 @@
         </div>
     </div>
 </div>
+<<<<<<< HEAD
 </x-guest-layout>
+=======
+</x-guest-layout>
+>>>>>>> maciel
