@@ -276,34 +276,4 @@
         </div>
     </div>
     </section>
-    
-    <!-- Sección de testimonios -->
-    <section class="py-12">
-        <div class="container mx-auto py-20 px-4 text-center">
-            <h2 class="text-red-500 uppercase tracking-wide font-semibold mb-2">Promoción</h2>
-            <h3 class="text-3xl font-bold text-gray-800 mb-8">Vea lo que nuestros clientes dicen sobre nosotros</h3>
-            <div class="relative bg-white py-24 px-8 rounded-lg shadow-lg max-w-3xl mx-auto min-h-80">
-                <div class="absolute left-0 top-1/2 transform -translate-y-1/2">
-                    <button class="bg-gray-200 text-gray-600 hover:bg-gray-300 p-2 rounded-full focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="absolute right-0 top-1/2 transform -translate-y-1/2">
-                    <button class="bg-gray-200 text-gray-600 hover:bg-gray-300 p-2 rounded-full focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="mb-4 py-8">
-                    <img src="https://cdn-icons-png.freepik.com/256/14083/14083134.png?semt=ais_hybrid" alt="Cliente" class="w-16 h-16 mx-auto rounded-full border-4 border-white shadow-lg">
-                </div>
-                <blockquote class="text-gray-600 italic mb-4 px-8">"Lo que realmente me gusta de esta página es la amplia variedad de destinos y opciones de alojamiento que ofrece. Siempre encuentro excelentes ofertas y promociones que se adaptan a mi presupuesto y preferencias."</blockquote>
-                <p class="font-semibold text-gray-800 py-8">Christine Beckers - Diseñadora</p>
-                
-            </div>
-        </div>
-    </section>
 </x-app-layout>
