@@ -57,12 +57,15 @@
             </div>
 
             <div class="bg-white rounded-lg shadow-md p-6">
-                <div class="flex justify-center items-center mb-4">
-                    <img src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-airplane-vector-icon-png-image_3757854.jpg" alt="Vuelos" class="w-16 h-16 mr-4">
-                </div>
-                <h3 class="text-xl text-center font-bold">Las mejores opciones de vuelos</h3>
-                <p class="text-center text-gray-600">Trabajamos con las principales aerolíneas y agencias de viajes para garantizarte una experiencia de vuelo cómoda.</p>
+                <a href="{{ url('/flights') }}" class="block">
+                    <div class="flex justify-center items-center mb-4">
+                        <img src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-airplane-vector-icon-png-image_3757854.jpg" alt="Vuelos" class="w-16 h-16 mr-4">
+                    </div>
+                    <h3 class="text-xl text-center font-bold">Las mejores opciones de vuelos</h3>
+                    <p class="text-center text-gray-600">Trabajamos con las principales aerolíneas y agencias de viajes para garantizarte una experiencia de vuelo cómoda.</p>
+                </a>
             </div>
+
 
             <div class="bg-white rounded-lg shadow-md p-6">
                 <div class="flex justify-center items-center mb-4">
