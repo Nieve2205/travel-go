@@ -3,14 +3,11 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PaquetesController;
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\PackageController;
 use App\Http\Controllers\PaymentController;
-=======
 use App\Http\Middleware\Cors;
 use App\Http\Controllers\FlightController;
->>>>>>> upstream/main
 
 Route::get('/', function () {
     return view('welcome');
@@ -34,7 +31,6 @@ Route::middleware('auth')->group(function () {
 });
 
 
-<<<<<<< HEAD
 Route::post('/buscar', [SearchController::class, 'search'])->name('search');
 Route::post('/crear-paquete', [PackageController::class, 'createPackage'])->name('create.package');
 Route::get('/pago', [PaymentController::class, 'showPaymentPage'])->name('payment.page');
@@ -45,7 +41,3 @@ Route::get('/pago/exito', function() {
 })->name('payment.success');
 
 require __DIR__.'/auth.php';
-=======
-
-require __DIR__ . '/auth.php';
->>>>>>> upstream/main
