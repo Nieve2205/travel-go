@@ -25,20 +25,16 @@
             <!-- Contenido superpuesto -->
             <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
                 <h1 class="text-4xl md:text-6xl font-bold text-left mb-10 z-5 px-32 md:px-64">No importa a dónde vayas, te llevaremos allí.</h1>
-                <form action="" method="POST">
-                    <div class="bg-white bg-opacity-40 rounded-lg p-6 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-4 z-10">
-                        <input type="text" placeholder="¿A dónde?" class="p-2 rounded w-full md:w-auto text-black" style="color: black;">
-                        <select class="p-2 px-12 rounded w-full md:w-auto text-black" style="color: black;">
+                <form action="{{ route('search') }}" method="POST">
                     <div class="bg-white bg-opacity-40 rounded-lg p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 z-10">
                         <input type="text" placeholder="¿A dónde?" class="p-2 rounded w-full md:w-auto text-black" style="color: black;">
-                        <select class="p-2 rounded w-full md:w-auto text-black" style="color: black;">
+                        <select class="p-2 px-12 rounded w-full md:w-auto text-black" style="color: black;">
                             <option>Tipo de viaje</option>
                             <option>Vacaciones</option>
                             <option>Negocios</option>
                             <option>Aventura</option>
                         </select>
-                        <input type="text" placeholder="Duración" class="p-2 rounded w-full md:w-auto text-black" style="color: black;">
-                        <button class="bg-red-600 hover:bg-red-700 text-white p-2 rounded w-full md:w-auto">Buscar</button>
+                        <button class="bg-red-600 hover:bg-red-700 text-white p-2 px-8 rounded w-full md:w-auto">Buscar</button>
                     </div>
                 </form>
                 <!-- Información adicional debajo del formulario -->
@@ -152,7 +148,7 @@
                     <h2 class="text-2xl font-bold">Construya su propio paquete</h2>
                     <button @click="showModal = false" class="text-gray-500 hover:text-gray-700">&times;</button>
                 </div>
-                <form>
+                <form action="{{ route('create.package') }}" method="POST">
                     <div class="mb-4">
                         <label class="block text-gray-700">Introduzca lugar de partida (país, región o ciudad)</label>
                         <input type="text" placeholder="Suiza" class="w-full px-3 py-2 border rounded-lg">
@@ -181,16 +177,16 @@
                             <!-- Más opciones -->
                         </select>
                     </div>
-                    <div class="mb-4">
+          <!--          <div class="mb-4">
                         <label class="block text-gray-700">Reserve una Habitación:</label>
                         <div class="flex items-center">
                             <input type="checkbox" id="alojamiento" class="mr-2">
                             <label for="alojamiento" class="text-gray-700">Alojamiento</label>
                             <button type="button" class="ml-4 px-4 py-2 bg-red-600 text-white rounded-full hover:bg-red-700">Escoger habitación</button>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="text-right">
-                        <button type="button" class="mt-4 px-6 py-2 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700">Comprar</button>
+                        <a href="/pago" class="bg-red-600 hover:bg-red-700 text-white p-2 rounded w-full md:w-auto block md:inline-block text-center md:text-left">Comprar</a>
                     </div>
                 </form>
             </div>
@@ -277,8 +273,6 @@
         <div class="mt-8 text-center mb-8">
 
         <a href="/paquetes" class="bg-red-600 hover:bg-red-700 text-white p-2 rounded w-full md:w-auto block md:inline-block text-center md:text-left">Explorar más tours</a>
-        <button class="bg-red-600 hover:bg-red-700 text-white p-2 rounded w-full md:w-auto">Explorar más tours</button>
-        </div>
     </div>
     </section>
 </x-app-layout>

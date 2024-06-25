@@ -3,12 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-=======
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=bakbak-one:400|braah-one:400|carattere:400" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/4f61daaf70.js" crossorigin="anonymous"></script>
->>>>>>> maciel
     <title>{{ config('app.name', 'TravelGo') }}</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="{{ asset('js/app.js') }}" defer></script>
