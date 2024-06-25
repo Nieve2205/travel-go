@@ -28,11 +28,7 @@
                 <form action="{{ route('search') }}" method="POST">
                     <div class="bg-white bg-opacity-40 rounded-lg p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 z-10">
                         <input type="text" placeholder="¿A dónde?" class="p-2 rounded w-full md:w-auto text-black" style="color: black;">
-                        <select class="p-2 m-16 rounded w-full md:w-auto text-black" style="color: black;">
-                            <option>Tipo de viaje</option>
-                            <option>Vacaciones</option>
-                            <option>Negocios</option>
-                            <option>Aventura</option>
+                        <input type="text" placeholder="¿Hacia dónde?" class="p-2 rounded w-full md:w-auto text-black" style="color: black;">
                         </select>
                         <button class="bg-red-600 hover:bg-red-700 text-white p-2 rounded w-full md:w-auto">Buscar</button>
                     </div>
